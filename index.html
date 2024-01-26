@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		table{
+
+			width: 100%;
+			border-collapse: collapse;
+		}
+		tr{
+			padding: 5px;
+			border: 3px solid black;
+		}
+
+		td{
+			padding: 5px;
+			border: 3px solid black;
+		}
+		.penjelasan div:nth-child(1) {
+			background-color: lightgreen ;
+		}
+		.penjelasan div:nth-child(2) {
+			background-color: yellow ;
+		}
+		.penjelasan div:nth-child(3) {
+			background-color: orange ;
+		}
+		.penjelasan div:nth-child(4) {
+			background-color: red ;
+			color: white;
+
+		}
+		.penjelasan div:nth-child(5) {
+			background-color: purple;
+			color: white;
+		}
+		.penjelasan div:nth-child(6) {
+			background-color: darkred ;
+			color: white;
+		}
+
+	</style>
+
+	<title></title>
+</head>
+<body>
+	<p>TINGKAT POLUSI UDARA untuk polutan pm2.5</p>
+<form name="pencarian">
+	CARI KOTA <input type="text" name="city" size="12"> <input type="button" id="tombol" name="cari" value="cari" >
+
+
+</form>
+	<div id="main"></div>
+<br>
+<br>
+	<table id="table">HISTORY & PERKIRAAN KUALITAS AQI(untuk pm2.5)
+		<tr>
+			<td>tanggal</td>
+			<td>maksimal</td>
+			<td>minimal</td>
+			<td>rata-rata</td>
+
+		</tr>
+		<tr>
+			
+		</tr>
+	</table>
+	<p>AQI TINGKAT POLUSI UDARA</p>
+		<p>implikasi kesehatan	pernyataan kehati-hatian(untuk pm2.5)</p>
+	<div class="penjelasan">
+		
+	
+		<div>0-50 bagus <br>kualitas udara dianggap memuaskan dan polusi udara hanya menimbulkan sedikit resiko atau tidak sama sekali</div>
+	
+	<div>51-100 sedang <br>kualitas udara mungkin dapat diterima;namun,untuk beberapa polutan mungkin terdapat masalah kesehatan bagi sebagian orang yang sangat sensitif terhadap polusi udara<br>anak-anak dan orang dewasa yang aktif ,serta penderita penyakit pernapasan,seperti asma harus membatasi aktifitas diluar ruangan </div>
+<div>
+	<p>101-150Tidak Sehat untuk Kelompok Sensitif
+Anggota kelompok sensitif mungkin mengalami dampak kesehatan. Masyarakat umum kemungkinan besar tidak akan terpengaruh.
+Anak-anak dan orang dewasa yang aktif, serta penderita penyakit pernapasan, seperti asma, harus membatasi aktivitas di luar ruangan dalam waktu lama
+</p>
+</div>
+
+<div><p>151-200Tidak sehat
+Setiap orang mungkin mulai mengalami dampak kesehatan; anggota kelompok sensitif mungkin mengalami dampak kesehatan yang lebih serius
+Anak-anak dan orang dewasa yang aktif, serta penderita penyakit pernapasan, seperti asma, harus menghindari aktivitas di luar ruangan dalam waktu lama; semua orang, terutama anak-anak, harus membatasi aktivitas di luar ruangan dalam waktu lama
+
+</p>
+</div>
+<div>
+	<p>
+		201-300Sangat Tidak Sehat
+Peringatan kesehatan tentang kondisi darurat. Seluruh populasi lebih mungkin terkena dampaknya.
+Anak-anak dan orang dewasa yang aktif, serta penderita penyakit pernapasan, seperti asma, harus menghindari aktivitas di luar ruangan; semua orang, terutama anak-anak, harus membatasi aktivitas di luar ruangan.
+
+	</p>
+</div>
+
+<div><p>300+Berbahaya
+Peringatan kesehatan: setiap orang mungkin mengalami dampak kesehatan yang lebih serius
+Setiap orang harus menghindari semua aktivitas di luar ruangan
+</p></div>
+	</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
