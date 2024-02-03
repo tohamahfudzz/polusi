@@ -3,7 +3,14 @@ var tombol=document.getElementById('tombol');
 var table=document.querySelector('#table');
 
 function cari(){
-	
+	var hapusTr=Array.from(table.children);
+	var tanda=table.querySelector('tr:nth-child(2)');
+	if(tanda){
+		var hapusTr1=hapusTr.slice(0);
+		hapusTr1.forEach(element=>{
+			element.remove();
+		});
+	}
 	var info=a.querySelector('p:nth-child(1)');
 	var info2=a.querySelector('p:nth-child(2)');
 
