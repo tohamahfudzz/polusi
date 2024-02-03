@@ -16,7 +16,7 @@ var form=document.pencarian.city.value;
 
 var request=new XMLHttpRequest();
 
-request.open('GET',`http://api.waqi.info/feed/${form}/?token=28da87eeb04da304eceb8c1cb82431ca5cbe5bc2`,true);
+request.open('GET',`https://api.waqi.info/feed/${form}/?token=28da87eeb04da304eceb8c1cb82431ca5cbe5bc2`,true);
 request.onload=function()
 {
 if (request.status==200) {
